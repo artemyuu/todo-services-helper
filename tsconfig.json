@@ -3,7 +3,7 @@
     "target": "ES6",
     "module": "CommonJS",
     "rootDir": "./src",
-    "outDir": "./lib",
+    "outDir": "./",
     "esModuleInterop": true,
     "strict": true,
     "declaration": true,
