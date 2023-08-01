@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "start": "npx ts-node index.ts",
     "build": "tsc"
   },
   "author": "",
