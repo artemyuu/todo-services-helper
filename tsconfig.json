@@ -6,7 +6,6 @@
     "outDir": "./lib",
     "esModuleInterop": true,
     "strict": true,
-    "sourceMap": true,
     "typeRoots": ["node_modules/@types"],
     "paths": {
       "middlewares/*": ["./src/middlewares"],
