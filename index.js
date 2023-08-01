@@ -17,4 +17,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./src/middlewares"), exports);
 __exportStar(require("./src/models"), exports);
 __exportStar(require("./src/services"), exports);
-//* pipeline test  */
