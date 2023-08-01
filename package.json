@@ -13,5 +13,8 @@
   "devDependencies": {
     "@types/express": "^4.17.17"
   },
-  "files": ["/lib"]
+  "files": [
+    "/lib",
+    "index.ts"
+  ]
 }
