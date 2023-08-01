@@ -6,6 +6,7 @@
     "outDir": "./lib",
     "esModuleInterop": true,
     "strict": true,
+    "declaration": true,
     "typeRoots": ["node_modules/@types"],
   }
 }

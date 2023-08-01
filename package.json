@@ -2,9 +2,8 @@
   "name": "todo-services-helper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
   "scripts": {
-    "start": "npx ts-node index.ts",
+    "start": "tsc -d --declarationMap --emitDeclarationOnly",
     "build": "tsc"
   },
   "author": "",
@@ -18,7 +17,8 @@
     "@types/express": "^4.17.17"
   },
   "files": [
-    "./lib",
-    "index.js"
+    "./src",
+    "index.js",
+    "index.d.ts"
   ]
 }
