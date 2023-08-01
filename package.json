@@ -4,8 +4,8 @@
   "description": "",
   "marn": "index.ts",
   "scripts": {
-    "start": "tsc -d --declarationMap --emitDeclarationOnly",
-    "build": "tsc"
+    "build": "npm run clean && tsc",
+    "clean": "tsc --build --clean"
   },
   "author": "",
   "license": "ISC",
