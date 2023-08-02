@@ -11,12 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DB_SERVICE = void 0;
 const DB_SERVICE = (db) => ({
-    proc: (procName, params = []) => __awaiter(void 0, void 0, void 0, function* () {
-        const res = yield db.proc(procName, params);
-        return res
-            ? res[0]
-            : res;
-    }),
     func: (procName, params = []) => __awaiter(void 0, void 0, void 0, function* () {
         const res = yield db.func(procName, params);
         return res
