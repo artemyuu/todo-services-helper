@@ -1,9 +1,17 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sendStatus = exports.sendJson = exports.ifError = void 0;
-var if_error_middleware_1 = require("./if-error.middleware");
-Object.defineProperty(exports, "ifError", { enumerable: true, get: function () { return if_error_middleware_1.ifError; } });
-var send_json_middleware_1 = require("./send-json.middleware");
-Object.defineProperty(exports, "sendJson", { enumerable: true, get: function () { return send_json_middleware_1.sendJson; } });
-var send_status_middleware_1 = require("./send-status.middleware");
-Object.defineProperty(exports, "sendStatus", { enumerable: true, get: function () { return send_status_middleware_1.sendStatus; } });
+__exportStar(require("./send-response.middleware"), exports);
