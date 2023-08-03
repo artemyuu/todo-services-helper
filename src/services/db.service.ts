@@ -8,7 +8,7 @@ export const DB_SERVICE = (db: pgPromise.IDatabase<{}, pg.IClient>) => ({
         const { result, errors } = dbResponse[0];
 
         if(errors) {
-            throw errors;
+            throw (errors);
         }
 
         return result;
