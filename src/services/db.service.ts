@@ -4,10 +4,13 @@ import { DatabaseResponse } from '../models';
 
 export const DB_SERVICE = (db: pgPromise.IDatabase<{}, pg.IClient>) => ({
     func: async <T>(procName: string, params: any[] = [])  => {
-        const res = await db.func<DatabaseResponse<T>[]>(procName, params);
+        const dbResponse = await db.func<DatabaseResponse<T>[]>(procName, params);
+        const { result, errors } = dbResponse[0];
 
-        return res 
-            ? res[0] 
-            : res;
+        if(errors) {
+            throw (errors);
+        }
+
+        return result;
     }
 })

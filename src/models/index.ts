@@ -1,4 +1,4 @@
-export { DatabaseError } from './database-error.interface';
+export { Error } from './database-error.interface';
 export { DatabaseResponse } from './database-response.interface';
 export { ResponseLocals } from './response-locals.interface';
 export { Response } from './response.type';
