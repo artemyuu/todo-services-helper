@@ -1,5 +1,5 @@
-import { DatabaseError } from "./database-error.interface";
+import { Error } from "./database-error.interface";
 export interface DatabaseResponse<T> {
     result: T;
-    errors: DatabaseError[];
+    errors: Error[];
 }
