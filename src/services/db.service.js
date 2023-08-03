@@ -12,10 +12,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DB_SERVICE = void 0;
 const DB_SERVICE = (db) => ({
     func: (procName, params = []) => __awaiter(void 0, void 0, void 0, function* () {
-        const res = yield db.func(procName, params);
-        return res
-            ? res[0]
-            : res;
+        const dbResponse = yield db.func(procName, params);
+        const { result, errors } = dbResponse[0];
+        if (errors) {
+            throw (errors);
+        }
+        return result;
     })
 });
 exports.DB_SERVICE = DB_SERVICE;
